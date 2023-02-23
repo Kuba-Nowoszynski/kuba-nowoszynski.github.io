@@ -1,43 +1,62 @@
 body {
+  box-sizing: border-box;
+  background: whitesmoke;
+  margin: 0;
+}
+
+nav {
+  font-family: "Tilt Prism", cursive;
+  font-size: 5rem;
+  background: rgba(236, 97, 218, 0.2);
+  text-align: center;
+  color: #23c9ff;
+  margin-bottom: 1rem;
+}
+
+.flex {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  justify-content: center;
   align-items: center;
-  height: 70vh;
+}
+
+.photo {
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .anim {
-  width: 200px;
-  height: 200px;
+  margin-top: 2rem;
+  width: 10rem;
+  height: 10rem;
   background-color: blue;
-  margin-bottom: 50px;
-  cursor: pointer;
+  animation: animate 4s infinite forwards;
+  background-size: contain;
 }
-
 .anim:hover {
-  animation: animate 3s infinite forwards;
+  cursor: pointer;
+  background-image: url("./images/profile_picture.jpg") !important;
+  background-position: center;
 }
 
 @keyframes animate {
-  25% {
+  20% {
     background: red;
     color: red;
     transform: rotate(45deg);
   }
-  50% {
+  40% {
     background: orange;
     transform: rotate(90deg);
     transform: scale(0.7);
     border-radius: 50%;
   }
-  75% {
+  60% {
     background-color: pink;
     transform: rotate(-45deg);
     transform: scale(1.2);
     border-radius: 5%;
   }
-  100% {
+  80% {
     background-color: yellow;
     transform: rotate(180deg);
     transform: scale(0.5);
@@ -45,14 +64,43 @@ body {
   }
 }
 .fa-down-long {
-  font-size: 6rem;
+  margin-left: 4rem;
+  font-size: 4rem;
   color: rgb(217, 0, 255);
 }
 
 .linkList {
+  width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.linkList * {
-  margin: 1em auto;
+.linkList div {
+  background: white;
+  width: 25rem;
+  height: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.3rem solid rgba(247, 107, 56, 0.92);
+  border-radius: 1.7rem;
+  margin-bottom: 5rem;
+  margin-right: 1rem;
+  transition: opacity 0.5s ease-in-out;
+}
+.linkList div:hover {
+  opacity: 0.7;
+  border-color: green;
+}
+.linkList div figure {
+  margin: auto;
+}
+.linkList div img {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+.linkList div figcaption {
+  color: #ff9f1c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
