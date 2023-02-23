@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.anim {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.anim:hover {
+  animation: animate 3s infinite forwards;
+}
+
+@keyframes animate {
+  25% {
+    background: red;
+    color: red;
+    transform: rotate(45deg);
+  }
+  50% {
+    background: orange;
+    transform: rotate(90deg);
+    transform: scale(0.7);
+    border-radius: 50%;
+  }
+  75% {
+    background-color: pink;
+    transform: rotate(-45deg);
+    transform: scale(1.2);
+    border-radius: 5%;
+  }
+  100% {
+    background-color: yellow;
+    transform: rotate(180deg);
+    transform: scale(0.5);
+    border-radius: 50%;
+  }
+}
+
+.fa-down-long {
+  font-size: 6rem;
+  color: rgb(217, 0, 255);
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  * {
+    margin: 1em auto;
+  }
+}
