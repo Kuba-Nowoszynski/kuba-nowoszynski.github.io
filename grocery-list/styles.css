@@ -1,0 +1,142 @@
+body {
+  background-color: rgba(135, 206, 235, 0.6);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+section {
+  margin: 40px auto;
+  width: 700px;
+  height: fit-content;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: aliceblue;
+  border-radius: 16px;
+  position: relative;
+}
+
+.alert {
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  transition: all 0.8s;
+  opacity: 0.1;
+  display: none;
+}
+.red {
+  display: block;
+  box-shadow: 0 0 5px red;
+  color: red;
+  background: pink;
+}
+.green {
+  display: block;
+  box-shadow: 0 0 5px green;
+  color: green;
+  background: rgba(173, 255, 47, 0.4);
+}
+.opacity {
+  opacity: 1;
+  top: 3%;
+}
+
+h1 {
+  width: fit-content;
+  margin: 20px auto 40px auto;
+  color: rgb(43, 13, 84, 0.8);
+  letter-spacing: 9px;
+  font-size: 40px;
+}
+
+.addNew {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+#item {
+  width: 250px;
+  height: 50px;
+  padding: 0 5px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 8px grey;
+  clip-path: inset(-10px 0px -10px -10px);
+}
+#item::placeholder {
+  padding: 0 5px;
+}
+
+#add {
+  transition: background 0.5s;
+  transition: color 0.3s;
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: rgba(135, 206, 235, 0.6);
+  border: none;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 0 8px grey;
+  clip-path: inset(-10px -10px -10px 0px);
+}
+#add:hover {
+  background: rgb(65, 183, 230, 0.8);
+  color: white;
+}
+
+#clearAll {
+  color: red;
+  letter-spacing: 3px;
+  width: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+article {
+  width: 60%;
+  margin: 15px auto;
+  position: relative;
+  height: fit-content;
+}
+
+span {
+  font-size: 25px;
+  letter-spacing: 1.3px;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  font-size: 20px;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+.edit {
+  margin-right: 50px;
+  color: green;
+}
+.del {
+  color: red;
+}
