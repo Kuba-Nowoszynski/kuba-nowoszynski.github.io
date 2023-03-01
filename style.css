@@ -1,23 +1,64 @@
 body {
-  box-sizing: border-box;
   background: whitesmoke;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body * {
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 nav {
-  font-family: "Tilt Prism", cursive;
-  font-size: 5rem;
+  font-weight: 100;
   background: rgba(236, 97, 218, 0.2);
-  text-align: center;
+  box-shadow: 0 0 1rem 0.8rem rgba(236, 97, 218, 0.3);
+  border-radius: 0 0 1.5rem 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+nav h1 {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 0 1rem;
+  font-size: 1.7rem;
+  font-weight: 400;
   color: #23c9ff;
-  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li::after {
+  content: "";
+  display: block;
+  margin-top: 0.2rem;
+  width: 100%;
+  border-radius: 1rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #107fa4, #23c9ff);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+  color: #107fa4;
+}
+nav ul li:hover::after {
+  opacity: 1;
 }
 
-.flex {
+.flex-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,22 +118,23 @@ nav {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .linkList div {
   background: white;
-  width: 25rem;
-  height: 100%;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.3rem solid rgba(247, 107, 56, 0.92);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
   border-radius: 1.7rem;
   margin-bottom: 5rem;
-  margin-right: 1rem;
-  transition: opacity 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (min-width: 1025px) {
+  .linkList div {
+    flex-basis: 30%;
+  }
 }
 .linkList div:hover {
   opacity: 0.7;
-  border-color: green;
+  transform: scale(1.1);
 }
 .linkList div figure {
   margin: auto;
@@ -102,9 +144,15 @@ nav {
   border-radius: 0.625rem;
 }
 .linkList div figcaption {
-  color: #ff9f1c;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: rgba(10, 10, 10, 0.8);
+  font-size: 1.2rem;
+  font-weight: 400;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 1025px) {
+  .linkList div figcaption {
+    padding-bottom: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

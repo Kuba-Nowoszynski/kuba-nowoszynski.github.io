@@ -50,7 +50,7 @@ body {
   padding: 0;
   font-size: 1.125rem;
   line-height: 1.3;
-  color: hsl(233deg, 8%, 62%);
+  color: hsl(233, 8%, 62%);
   font-family: "Public Sans", sans-serif;
 }
 
@@ -62,7 +62,7 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: hsl(233deg, 8%, 62%);
+  color: hsl(233, 8%, 62%);
   transition: color 0.3s ease-in-out;
 }
 
@@ -81,8 +81,8 @@ a:hover {
 
 button,
 .button {
-  color: hsl(0deg, 0%, 98%);
-  background: linear-gradient(90deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(0, 0%, 98%);
+  background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   font-size: 1.125rem;
   font-weight: 700;
   padding: 0.8rem 2rem;
@@ -141,7 +141,7 @@ button:hover,
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(hsl(233deg, 26%, 24%), transparent);
+  background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
 }
 .header__menuLinks {
   opacity: 0;
@@ -167,12 +167,12 @@ button:hover,
   right: 0;
   height: 0.4rem;
   border-radius: 1rem;
-  background: linear-gradient(90deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 .header__menuLinks *:hover {
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233, 26%, 24%);
 }
 .header__menuLinks *:hover::before {
   opacity: 1;
@@ -193,12 +193,12 @@ button:hover,
   right: 0;
   height: 0.5rem;
   border-radius: 1rem;
-  background: linear-gradient(90deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 .header__links a:hover {
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233, 26%, 24%);
 }
 .header__links a:hover::before {
   opacity: 1;
@@ -206,7 +206,7 @@ button:hover,
 
 .hero {
   position: relative;
-  background: hsl(0deg, 0%, 98%);
+  background: hsl(0, 0%, 98%);
 }
 @media (min-width: 64em) {
   .hero {
@@ -291,7 +291,7 @@ button:hover,
 .hero__text h1 {
   font-size: 2.5rem;
   font-weight: 400;
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233, 26%, 24%);
   margin-bottom: 0;
 }
 @media (min-width: 64em) {
@@ -324,7 +324,7 @@ button:hover,
 
 .features {
   padding: 1rem 7vw;
-  background: hsl(220deg, 16%, 96%);
+  background: hsl(220, 16%, 96%);
 }
 @media (max-width: 63.9375em) {
   .features {
@@ -335,7 +335,7 @@ button:hover,
   margin-bottom: 3rem;
 }
 .features .heading h2 {
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233, 26%, 24%);
   font-weight: 400;
   font-size: 2.5rem;
 }
@@ -365,7 +365,7 @@ button:hover,
   }
 }
 .features .featureList .feature h3 {
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233, 26%, 24%);
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -378,7 +378,7 @@ button:hover,
 
 .articles {
   padding: 5rem 7vw;
-  background: hsl(0deg, 0%, 98%);
+  background: hsl(0, 0%, 98%);
 }
 @media (max-width: 63.9375em) {
   .articles {
@@ -387,7 +387,7 @@ button:hover,
 }
 .articles .heading {
   margin-bottom: 3rem;
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233, 26%, 24%);
   font-weight: 400;
   font-size: 2.5rem;
 }
@@ -414,7 +414,7 @@ button:hover,
   overflow: hidden;
   flex: 1;
   position: relative;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
@@ -458,7 +458,7 @@ button:hover,
   font-weight: 300;
 }
 .articles .articleList .article__content h3 {
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233, 26%, 24%);
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: -0.5rem;
@@ -478,7 +478,7 @@ button:hover,
 }
 
 .footer {
-  background-color: hsl(233deg, 26%, 24%);
+  background-color: hsl(233, 26%, 24%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -526,7 +526,7 @@ button:hover,
 }
 .footer__social-media a:hover svg path {
   transition: fill 0.15s ease-in-out;
-  fill: hsl(192deg, 70%, 51%);
+  fill: hsl(192, 70%, 51%);
 }
 .footer__links {
   display: flex;
@@ -542,13 +542,13 @@ button:hover,
   }
 }
 .footer__links a {
-  color: hsl(220deg, 16%, 96%);
+  color: hsl(220, 16%, 96%);
   font-weight: 300;
   font-size: 1rem;
   transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 }
 .footer__links a:hover {
-  color: hsl(192deg, 70%, 51%);
+  color: hsl(192, 70%, 51%);
 }
 .footer__links a:not(:last-child) {
   margin-bottom: 1rem;
@@ -599,8 +599,8 @@ button:hover,
   text-align: center;
 }
 .attribution a {
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233, 26%, 24%);
 }
 .attribution a:hover {
-  color: hsl(192deg, 70%, 51%);
+  color: hsl(192, 70%, 51%);
 }/*# sourceMappingURL=style.css.map */
